@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d581938a.chunk.css",
-    "main.js": "/static/js/main.d0384243.chunk.js",
-    "main.js.map": "/static/js/main.d0384243.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c2b27199.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c2b27199.js.map",
-    "static/js/2.04bbdb36.chunk.js": "/static/js/2.04bbdb36.chunk.js",
-    "static/js/2.04bbdb36.chunk.js.map": "/static/js/2.04bbdb36.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.d581938a.chunk.css.map": "/static/css/main.d581938a.chunk.css.map",
-    "static/js/2.04bbdb36.chunk.js.LICENSE.txt": "/static/js/2.04bbdb36.chunk.js.LICENSE.txt",
-    "static/media/angle-down-solid.8751ddd8.svg": "/static/media/angle-down-solid.8751ddd8.svg"
+    "main.css": "/ReactLotto/static/css/main.d581938a.chunk.css",
+    "main.js": "/ReactLotto/static/js/main.d0384243.chunk.js",
+    "main.js.map": "/ReactLotto/static/js/main.d0384243.chunk.js.map",
+    "runtime-main.js": "/ReactLotto/static/js/runtime-main.ad590a1d.js",
+    "runtime-main.js.map": "/ReactLotto/static/js/runtime-main.ad590a1d.js.map",
+    "static/js/2.04bbdb36.chunk.js": "/ReactLotto/static/js/2.04bbdb36.chunk.js",
+    "static/js/2.04bbdb36.chunk.js.map": "/ReactLotto/static/js/2.04bbdb36.chunk.js.map",
+    "index.html": "/ReactLotto/index.html",
+    "static/css/main.d581938a.chunk.css.map": "/ReactLotto/static/css/main.d581938a.chunk.css.map",
+    "static/js/2.04bbdb36.chunk.js.LICENSE.txt": "/ReactLotto/static/js/2.04bbdb36.chunk.js.LICENSE.txt",
+    "static/media/angle-down-solid.8751ddd8.svg": "/ReactLotto/static/media/angle-down-solid.8751ddd8.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2b27199.js",
+    "static/js/runtime-main.ad590a1d.js",
     "static/js/2.04bbdb36.chunk.js",
     "static/css/main.d581938a.chunk.css",
     "static/js/main.d0384243.chunk.js"
