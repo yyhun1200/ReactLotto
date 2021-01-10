@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5rem 1rem 2.5rem 1rem;
+}
+
+.ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: linear-gradient(#313c36, #313c36, #4a534f);
+  color: white;
+  font-weight: 600;
+}

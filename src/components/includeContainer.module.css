@@ -1,0 +1,35 @@
+.wrapper {
+  margin-top: 5rem;
+  height: 60vh;
+  padding: 0 2.5em;
+}
+.hidden {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #e296c7;
+  border: 2px solid black;
+}
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2em;
+  height: 2.2em;
+  color: white;
+  font-weight: 600;
+  z-index: 1;
+}
+.included {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: all 0.2s;
+}
