@@ -26,18 +26,21 @@ const Header = ({
       setHistoryAndSetSelect(selectedNumbers);
     } else {
       const selectedNumbers = Lotto.makeSelectedNumber(included);
-      setIncluded([]);
       setHistoryAndSetSelect(selectedNumbers);
     }
   };
   const handleHistory = () => {
     setDisplayHistory(!displayHistory);
   };
+  const handleInit = () => {
+    setIncluded([]);
+  };
   return (
     <header className={styles.header}>
       <div className={styles.title}>Lotto</div>
       <div className={styles.btnContainer}>
         <button onClick={handleHistory}>History</button>
+        <button onClick={handleInit}>초기화</button>
         <button onClick={handleDraw}>Draw</button>
       </div>
     </header>
