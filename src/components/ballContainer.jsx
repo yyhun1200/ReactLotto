@@ -1,14 +1,18 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./ballContainer.module.css";
 
-const BallContainer = ({ selected }) => {
+const BallContainer = memo(({ selected }) => {
   return (
     <div className={styles.container}>
-      {selected.map((ball) => {
-        return <span className={styles.ball}>{ball}</span>;
+      {selected.map((ball, index) => {
+        return (
+          <span key={"ball" + index} className={styles.ball}>
+            {ball}
+          </span>
+        );
       })}
     </div>
   );
-};
+});
 
 export default BallContainer;

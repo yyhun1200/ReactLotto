@@ -7,9 +7,13 @@ const History = ({ displayHistory, history }) => {
   return (
     <div className={`${styles.history} ${visible}`}>
       history
-      {history.map((array) => {
+      {history.map((array, index) => {
         return (
-          <BallContainer className={styles.ballContainer} selected={array} />
+          <BallContainer
+            key={"history" + index}
+            className={styles.ballContainer}
+            selected={array}
+          />
         );
       })}
     </div>
