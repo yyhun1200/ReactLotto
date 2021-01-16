@@ -34,6 +34,7 @@ const Header = ({
   };
   const handleInit = () => {
     setIncluded([]);
+    setHistory([]);
   };
   return (
     <header className={styles.header}>
