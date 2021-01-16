@@ -15,13 +15,6 @@ function App({ Lotto }) {
   const [history, setHistory] = useState([]);
   const [displayHistory, setDisplayHistory] = useState(false);
 
-  const initArray = (function () {
-    let array = [];
-    for (let i = 1; i <= 45; i++) {
-      array.push(i);
-    }
-    return array;
-  })();
   const handleDown = () => {
     setIncludeDisplay(!includeDisplay);
   };
@@ -29,7 +22,6 @@ function App({ Lotto }) {
     <div className={styles.app}>
       <Header
         Lotto={Lotto}
-        initArray={initArray}
         included={included}
         setIncluded={setIncluded}
         selected={selected}
@@ -42,7 +34,7 @@ function App({ Lotto }) {
       <History history={history} displayHistory={displayHistory} />
       <BallContainer selected={selected} />
       <IncludeContainer
-        initArray={initArray}
+        initArray={Lotto.initArray}
         setIncluded={setIncluded}
         included={included}
         includeDisplay={includeDisplay}

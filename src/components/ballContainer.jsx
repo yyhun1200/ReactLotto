@@ -5,11 +5,7 @@ const BallContainer = ({ selected }) => {
   return (
     <div className={styles.container}>
       {selected.map((ball) => {
-        return (
-          <span key={Date.now() + Math.random()} className={styles.ball}>
-            {ball}
-          </span>
-        );
+        return <span className={styles.ball}>{ball}</span>;
       })}
     </div>
   );

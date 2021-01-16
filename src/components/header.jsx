@@ -3,7 +3,6 @@ import React from "react";
 
 const Header = ({
   Lotto,
-  initArray,
   included,
   setIncluded,
   selected,
@@ -13,21 +12,22 @@ const Header = ({
   displayHistory,
   setDisplayHistory,
 }) => {
-  const setHistoryAndSetSelect = (selectedNumbers) => {
-    setSelected(selectedNumbers);
-    const newHistory = [selectedNumbers, ...history];
-    newHistory.length = newHistory.length > 6 ? 5 : newHistory.length;
-    setHistory(newHistory);
-  };
-
   const handleDraw = () => {
     if (included.length < 6) {
-      const selectedNumbers = Lotto.makeSelectedNumber(initArray);
+      const selectedNumbers = Lotto.makeSelectedNumber();
       setHistoryAndSetSelect(selectedNumbers);
     } else {
       const selectedNumbers = Lotto.makeSelectedNumber(included);
       setHistoryAndSetSelect(selectedNumbers);
     }
+  };
+
+  const setHistoryAndSetSelect = (selectedNumbers) => {
+    setSelected(selectedNumbers);
+    const newHistory = [selectedNumbers, ...history];
+    console.log(newHistory.length > 5);
+    newHistory.length = newHistory.length > 5 ? 5 : newHistory.length;
+    setHistory(newHistory);
   };
   const handleHistory = () => {
     setDisplayHistory(!displayHistory);
